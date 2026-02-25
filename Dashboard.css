@@ -1,0 +1,115 @@
+.dashboard {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #ff007f, transparent),
+              radial-gradient(circle at bottom right, #00d4ff, transparent),
+              linear-gradient(135deg, #1e1b4b, #312e81);
+  color: white;
+  padding: 0 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-buttons button {
+  margin-left: 15px;
+  padding: 8px 20px;
+  border-radius: 25px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.getstarted-btn {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+}
+
+.nav-buttons button:hover {
+  opacity: 0.8;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  background: linear-gradient(90deg, #00d4ff, #ff007f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.cta-btn {
+  margin-top: 30px;
+  padding: 14px 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff007f, #ff8c00);
+  color: white;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+}
+
+/* FEATURES */
+.features {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 280px;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-card h3 {
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
