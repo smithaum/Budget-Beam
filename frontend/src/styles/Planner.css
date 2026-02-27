@@ -1,0 +1,21 @@
+.planner-container {
+  padding: 40px;
+  font-family: Poppins, sans-serif;
+}
+
+.summary {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.add-expense input,
+.add-income input {
+  margin: 10px 10px 10px 0;
+  padding: 8px;
+}
+
+.add-expense button {
+  padding: 8px 15px;
+}
