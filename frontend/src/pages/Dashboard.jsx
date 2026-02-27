@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import Insights from "../components/Insights";
 import PrivateNavbar from "../components/PrivateNavbar";
 import "../styles/Dashboard.css";
 import {
@@ -245,15 +246,27 @@ function Dashboard() {
           </table>
         </div>
 
-        {/* ✅ AI Insight */}
-        <div className="ai-box">
-          <h3>AI Insight</h3>
-          <p>
-            {expense > income
-              ? "⚠ Your expenses are higher than income!"
-              : "✅ Great! Your financial balance looks good."}
-          </p>
-        </div>
+        {/* ✅ Charts */}
+<div className="charts">
+  <div className="chart-box">
+    <h3>Income vs Expense</h3>
+    <Bar data={barData} />
+  </div>
+
+  <div className="chart-box">
+    <h3>Expense Distribution</h3>
+    {expense > 0 ? (
+      <Pie data={pieData} />
+    ) : (
+      <p>No expense data yet</p>
+    )}
+  </div>
+</div>
+
+{/* ✅ AI Insights */}
+<div className="insights-section">
+  <Insights userId={user._id} />
+</div>
 
       </div>
     </>
