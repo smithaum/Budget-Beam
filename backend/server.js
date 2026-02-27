@@ -5,6 +5,8 @@ const cors = require("cors");
 
 const transactionRoutes = require("./routes/transactionRoutes");
 const authRoutes = require("./routes/authRoutes");
+const insightRoutes = require("./routes/insightRoutes");
+app.use("/api/insights", insightRoutes);
 
 const app = express();
 
