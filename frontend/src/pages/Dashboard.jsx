@@ -264,7 +264,7 @@ function Dashboard() {
 </div>
 
 {/* ✅ AI Insights */}
-<div className="insights-section">
+<div className="ai-box">
   <Insights userId={user._id} />
 </div>
 
