@@ -7,8 +7,8 @@ const transactionSchema = new mongoose.Schema({
   },
   amount: Number,
   category: String,
-  type: String,
-  date: String,
+  type: String,   // "income" or "expense"
+  date: String,   // stored as string
 });
 
 module.exports = mongoose.model("Transaction", transactionSchema);
